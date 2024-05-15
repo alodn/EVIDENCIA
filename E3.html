@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio </title>
+    <link rel="stylesheet" href="E3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="E1.html" class="nav-link" id="inicio">Inicio</a></li>
+            <li><a href="E2.html" class="nav-link" id="portafolio">Portafolio</a></li>
+            <li><a href="E3.html" class="nav-link" id="contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="container">
+        <div class="contact-section">
+            <div class="contact-form">
+                <h1>Contacto</h1>
+                <p>alondra.deanda24@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com"><img src="images/15527398.png" alt=""></a>
+                    <a href="https://twitter.com"><img src="images/5968958.png" alt=""></a>
+                    <a href="https://www.facebook.com"><img src="images/44659.png" alt=""></a>
+                </div>
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Nombre" required>
+                    <input type="email" id="email" placeholder="Correo electrónico" required>
+                    <input type="text" id="subject" placeholder="Asunto" required>
+                    <textarea id="message" placeholder="Mensaje" required></textarea>
+                    <button type="submit" id="submit-btn">Enviar mensaje</button>
+                </form>
+            </div>
+            <div class="video-section">
+                <video controls>
+                    <source src="files/lv_0_20240503124215.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio" src="click-sound.mp3"></audio>
+
+<footer class="footer-section">
+    <p>© 2024 Portafolio de Diseño Gráfico | Made By : Alondra De Anda | Todos los derechos reservados</p>
+</footer>
+    <script>
+
+        function animatePage() {
+
+            const elements = document.querySelectorAll('body > *');
+
+
+            gsap.from(elements, {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out"
+            });
+        }
+
+
+        window.addEventListener('load', animatePage);
+    </script>
+</body>
+</html>

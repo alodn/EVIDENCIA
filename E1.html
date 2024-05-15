@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio </title>
+    <link rel="stylesheet" href="E1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="E1.html" class="nav-link">Inicio</a></li>
+            <li><a href="E2.html" class="nav-link">Portafolio</a></li>
+            <li><a href="E3.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+	
+
+<section class="welcome-section">
+    <img src="images/ai midjourney.jpeg" alt="Imagen de fondo">
+   <div class="overlay"></div>
+    <div class="content">
+        <h1>Bienvenido a mi Portafolio</h1>
+        <h2>Neverland, my love</h2>
+        <p>Explora mi trabajo creativo.</p>
+    </div>
+</section>
+	
+	<section class="about-section">
+    <div class="about-content">
+        <div class="text">
+            <h2>Sobre Mí</h2>
+            <p>Mi nombre es Alondra De Anda Navarro, tengo 20 años, estoy estudiando Diseño Gráfico y animación, se hablar inglés, francés y aleman. Tengo certificados en adminitración y organización de eventos y programación para juegos interactivos.</p>
+        </div>
+        <div class="image">
+            <img src="images/PAG3 - Google Chrome 07_05_2024 08_12_53 p. m..png" alt="Imagen Sobre Mí" width="500" height="501">
+        </div>
+    </div>
+</section>
+	
+<section class="portfolio-section">
+    <h2 class="portfolio-title">Portafolio</h2>
+    <h3 class="portfolio-subtitle">Un vistazo a mi portafolio, clic para ver más</h3>
+    <div class="portfolio-items">
+        <div class="portfolio-item">
+                <img src="images/IMG_1398.JPG" alt="Proyecto 1">
+        </div>
+        <div class="portfolio-item">
+                <img src="images/OFERTAS2.gif" alt="Proyecto 2">
+        </div>
+        <div class="portfolio-item">
+                <img src="images/23.png" alt="Proyecto 3">
+        </div>
+    </div>
+<button onclick="window.location.href='E2.html'" class="view-more-btn">Clic para ver más</button>
+</section>
+	
+<section class="services-section">
+    <h2 class="services-title">Servicios</h2>
+    <div class="services-content">
+        <div class="service">
+            <h3>Redes Sociales</h3>
+            <p>Creaciones de post o videos que pueden ser utilizados y subidos a direfentes redes sociales.&nbsp;</p>
+        </div>
+        <div class="service">
+            <h3>Diseño de Logotipos</h3>
+            <p>Creación, desarrollo y diseño de logotipos para diferentes tipos de marcas, con diferentes enfoques y públicos.&nbsp;</p>
+        </div>
+        <div class="service">
+            <h3>Fotografia</h3>
+            <p>Fotografia de producto, persona o paisaje, sesiones continuas o solo una sesión.&nbsp;</p>
+        </div>
+    </div>
+</section>
+	
+<section class="title-section">
+    <h2>Contacto</h2>
+</section>
+	
+<section class="contact-section">
+    <div class="contact-item">
+        <img src="images/542689.png" alt="Ícono 1">
+        <p>alondra.deanda24@gmail.com</p>
+    </div>
+    <div class="contact-item">
+        <img src="images/3059446.png" alt="Ícono 2">
+        <p>+52 2224 809407</p>
+    </div>
+    <div class="contact-item">
+        <img src="images/map-location-pin-icon-free-png.png" alt="Ícono 3">
+        <p>Av. Triunfo Maderista 2202</p>
+    </div>
+    <div class="contact-item">
+        <a href="https://twitter.com">
+            <img src="images/5968958.png" alt="Ícono 4">
+        </a>
+        <p>Twitter</p>
+    </div>
+    <div class="contact-item">
+        <a href="https://instagram.com">
+            <img src="images/15527398.png" alt="Ícono 5">
+        </a>
+        <p>Instagram</p>
+    </div>
+</section>
+	
+<footer class="footer-section">
+    <p>© 2024 Portafolio de Diseño Gráfico | Made By : Alondra De Anda | Todos los derechos reservados</p>
+</footer>
+	
+    <script>
+
+        function animatePage() {
+
+            const elements = document.querySelectorAll('body > *');
+
+
+            gsap.from(elements, {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out"
+            });
+        }
+
+
+        window.addEventListener('load', animatePage);
+    </script>
+</body>
+</html>

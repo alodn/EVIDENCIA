@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color:#f9e79b;
+    color: black;
+}
+
+.nav-link:active {
+    background-color:#bab244;
+    color: white;
+}
+
+.welcome-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('ruta_de_la_imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ajusta la imagen */
+    z-index: -1; /* imagen */
+}
+
+.welcome-section h2 {
+    font-family: "Arial", sans-serif; /* fuente */
+    font-size: 2rem; /* tamaño */
+    color: #ffffff; /* colors */
+    margin-bottom: 40px; /* margen inferior */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* transparencia */
+}
+
+.content {
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    opacity: 0; /* Inicialmente oculto */
+}
+
+.about-section {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.about-content .text {
+    flex: 1;
+    padding: 0 60px;
+    text-align: center;
+}
+
+.about-content .image {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.about-content .image img {
+    max-width: 100px;
+    height: auto; 
+}
+
+.portfolio-section {
+    position: relative;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-title {
+    font-family: "Arial", sans-serif; /* Cambia la fuente según tus preferencias */
+    font-size: 2.5rem; /* Cambia el tamaño del título según tus preferencias */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-subtitle {
+    font-family: "Times New Roman", serif; /* Cambia la fuente según tus preferencias */
+    font-size: 1.2rem; /* Cambia el tamaño del subtítulo según tus preferencias */
+    text-align: center;
+    margin-bottom: 40px;
+}
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.portfolio-item img {
+    width: 300px; /* Establece el ancho deseado para las imágenes */
+    height: 200px; /* Establece la altura deseada para las imágenes */
+    border: 3px solid black; /* Agrega un borde de color negro */
+    transition: transform 0.3s ease;
+    object-fit: cover; /* Ajusta la imagen para que cubra el área asignada */
+}
+
+.portfolio-item:hover {
+    opacity: 0.5; /* Opacidad reducida al pasar el cursor sobre el contenedor */
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor sobre la imagen */
+}
+.services-section {
+    background-color: #f2f2f2; /* Color de fondo gris claro */
+    padding: 50px 0;
+}
+
+.services-title {
+    font-family: "Verdana", sans-serif; /* Cambia la fuente según tus preferencias */
+    font-size: 2rem; /* Cambia el tamaño del título según tus preferencias */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service {
+    text-align: center;
+    margin: 0 20px;
+    max-width: 300px;
+}
+
+.service h3 {
+    font-family: "Arial", sans-serif; /* Cambia la fuente según tus preferencias */
+    font-size: 1.5rem; /* Cambia el tamaño del título del servicio según tus preferencias */
+}
+
+.service p {
+    font-family: "Arial", sans-serif; /* Cambia la fuente según tus preferencias */
+    font-size: 1rem; /* Cambia el tamaño del texto del servicio según tus preferencias */
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Para que los nuevos contenedores se ajusten en la misma línea */
+    padding: 50px 0;
+}
+
+.contact-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+    margin: 0 20px 20px; /* Ajusta el margen inferior */
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.contact-item img {
+    max-width: 50px; /* Ajusta el tamaño del ícono según tus preferencias */
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-family: "Arial", sans-serif; /* Cambia la fuente del texto según tus preferencias */
+    font-size: 1rem; /* Cambia el tamaño del texto según tus preferencias */
+}
+
+.contact-item h3 {
+    font-family: "Verdana", sans-serif; 
+    font-size: 1.2rem; 
+}
+
+section {
+    padding: 20px;
+}
+
+
+.about-content .image img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.about-content .text {
+    text-align: justify; 
+}
+
+
+.view-more-btn {
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f9e79b;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.view-more-btn:hover {
+    background-color: #bab244;
+}
+.title-section h2 {
+    text-align: center;
+}
+.contact-item:hover {
+    transform: scale(1.1); /* Aumenta la escala al 110% */
+}
+.footer-section {
+    background-color: #000000; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px 0;
+}

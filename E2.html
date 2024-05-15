@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="E2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="E1.html" class="nav-link">Inicio</a></li>
+            <li><a href="E2.html" class="nav-link">Portafolio</a></li>
+            <li><a href="E3.html" class="nav-link">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+    
+<main>
+	
+    <section id="reproductor-audio">
+        <audio controls>
+            <source src="files/Y2meta (mp3cut.net).mp3" type="audio/mpeg">
+        </audio>
+        <p class="ambientacion-texto">Clic para ambientación</p>
+    </section>
+	
+    <section id="illustrations">
+        <h2>Ilustraciones</h2>
+        <div class="gallery">
+            <!-- Imágenes de ilustraciones -->
+            <img src="images/descarga2.jpeg" alt="Illustration 1">
+            <img src="images/PonyoontheCliffbytheSeabyThelobata.jpeg" alt="Illustration 2">
+            <img src="images/085f12a2-27b3-40cf-98e2-7afd2aca5eca.jpeg" alt="Illustration 3">
+            <img src="images/_bf84aaba-8c4b-4df1-a1a6-9d19b4685b18.jpeg" alt="Illustration 4">
+        </div>
+    </section>
+    
+    <section id="fotografias">
+        <h2>Fotografias</h2>
+        <div class="gallery">
+            <img src="images/IMG_1398.JPG" alt="Foto 1">
+            <img src="images/IMG_1403.JPG" alt="Foto 2">
+            <img src="images/20240215150241_IMG_1336.JPG" alt="Foto 3">
+            <img src="images/20240321184148_IMG_1449.JPG" alt="Foto 4">
+        </div>
+    </section>
+    
+    <section id="logofolio">
+        <h2>Logofolio</h2>
+        <div class="gallery">
+            <img src="images/aaaaaaa12121.png" alt="Logo 1">
+            <img src="images/5d963161-8a66-4666-bdc8-6726797908f2.png" alt="Logo 2">
+            <img src="images/23.png" alt="Logo 3">
+            <img src="images/234.png" alt="Logo 4">
+        </div>
+    </section>
+    
+    <section id="redes-sociales">
+        <h2>Redes sociales</h2>
+        <div class="gallery">
+            <img src="images/OFERTAS2.gif" alt="RS 1">
+            <img src="images/OFERTAS3.gif" alt="RS 2">
+            <img src="images/OFERTAS4.gif" alt="RS 3">
+            <img src="images/TINNIITUSRecuperado.png" alt="RS 4">
+        </div>
+    </section>
+    
+    <section id="publicidad">
+        <h2>Publicidad</h2>
+        <div class="gallery">
+            <img src="images/46sinttulo_20231013191316.jpg" alt="Publicidad 1">
+            <img src="images/56sinttulo.jpg" alt="Publicidad 2">
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 Portafolio de Diseño Gráfico | Made By : Alondra De Anda | Todos los derechos reservados</p>
+</footer>
+
+    <script>
+
+        function animatePage() {
+
+            const elements = document.querySelectorAll('body > *');
+
+
+            gsap.from(elements, {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power3.out"
+            });
+        }
+
+
+        window.addEventListener('load', animatePage);
+    </script>
+</body>
+</html>
